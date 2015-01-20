@@ -10,7 +10,7 @@
     .factory('dataservice', dataservice);
 
   /* @ngInject */
-  function dataservice($log) {
+  function dataservice() {
 
     var service = {
       getFeatures: getFeatures
@@ -22,7 +22,7 @@
 
     function getFeatures() {
       var data = [{name:'Thermometer', path:'images/RoastWatchScreen1.png'}, {name:'Stopwatch',path:'images/RoastWatchScreen2.png'}];
-      $log('Retrieved features data.');
+      console.log('Retrieved features data.');
       return data;
     }
   }

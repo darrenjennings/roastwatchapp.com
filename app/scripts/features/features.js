@@ -15,7 +15,7 @@ angular.module('app.features')
   .controller('FeaturesCtrl', FeaturesCtrl);
 
   /* @ngInject */
-  function FeaturesCtrl(){
+  function FeaturesCtrl(dataservice){
     var vm = this;
     vm.features = [];
     vm.title = 'Features';
@@ -27,7 +27,8 @@ angular.module('app.features')
     }
 
     function getFeatures() {
-      var data = [{name:'Thermometer', path:'images/RoastWatchScreen1.png'}, {name:'Stopwatch',path:'images/RoastWatchScreen2.png'}];
+      //var data = [{name:'Thermometer', path:'images/RoastWatchScreen1.png'}, {name:'Stopwatch',path:'images/RoastWatchScreen2.png'}];
+      var data = dataservice.getFeatures();
       vm.features = data;
       return vm.features;
     }
