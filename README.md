@@ -1,3 +1,2 @@
-# roastwatchapp.com
-src for roastwatchapp.com
-
+<h1>roastwatchapp.com</h1>
+<p>Roastwatchapp.com is a <a href="www.angularjs.org">angularJS</a> app used as a landing page for Roastwatch, the <a href="https://itunes.apple.com/us/app/roastwatch/id827445570?mt=8">iPhone app</a> I created in 2014. It's a bit of an overkill for a landing page but I enjoy Angular and wanted to play around a little with <a href="https://github.com/johnpapa/ng-demos/">John Papa's demos</a> and wanted to work with Gulp and Bower a little bit. App current hosted on Heroku running on NodeJS.</p>
