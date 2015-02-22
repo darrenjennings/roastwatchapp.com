@@ -65,7 +65,7 @@ module.exports = function (grunt) {
     // The actual grunt server settings
     connect: {
       options: {
-				useAvailablePort: true,        
+				useAvailablePort: true,
 
         // Change this to '0.0.0.0' to access the server from outside.
         hostname: 'localhost',
@@ -249,7 +249,6 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>/images',
-          src: '{,*/}*.svg',
           dest: '<%= yeoman.dist %>/images'
         }]
       }
@@ -340,7 +339,6 @@ module.exports = function (grunt) {
       dist: [
         'copy:styles',
         'imagemin',
-        'svgmin'
       ]
     },
 
@@ -370,7 +368,7 @@ module.exports = function (grunt) {
   });
 
 // change the tasks in the list to your production tasks
-	grunt.registerTask('heroku', 'heroku build task', function(){	
+	grunt.registerTask('heroku', 'heroku build task', function(){
       return grunt.task.run(['serve']);
 	});
 
